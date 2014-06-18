@@ -7,7 +7,9 @@ main (void)
     char name[256];
     char reddit_username[256];
     int  age;
+    char resulting_string[1024]; // A little bit ugly
     char temp;
+    FILE *fp;
 
     printf ("What is your name? ");
     if (fgets (name, sizeof (name), stdin) != NULL) {   
@@ -29,8 +31,17 @@ main (void)
             *pos = '\0';
     }
 
+    /* Create a format string to print and log. */
+    sprintf (resulting_string, "Your name is %s, you are %d years old and your username is %s\n", 
+            name, age, reddit_username);
+
     /* Print the information the user gave us. */
-    printf ("Your name is %s, you are %d years old and your username is %s\n", name, age, reddit_username);
+    printf (resulting_string);
+
+    /* Open a file and log the output of the program. */
+    fp = fopen ("log.txt", "w+");
+    fprintf (fp, resulting_string);
+    fclose (fp);
 
     return 0;
 }
