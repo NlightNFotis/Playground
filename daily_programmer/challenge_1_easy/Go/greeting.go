@@ -2,7 +2,8 @@ package main
 
 import (
     "fmt"
-    "io/ioutil"
+    //"io/ioutil"
+    "os"
 )
 
 func main() {
@@ -22,10 +23,14 @@ func main() {
     // create a format string to use for logging and stdoutput
     resulting_string := fmt.Sprintf("Your name is %s, you are %d years old, and your username is %s",
                         name, age, reddit_username)
-    resulting_bytes := []byte(resulting_string)
+    
     
     fmt.Println(resulting_string)
-    err := ioutil.WriteFile("log.txt", resulting_bytes, 0644)
-    if err != nil { panic(err) } 
+
+    // Write the resulting string to a log file.
+    f, err := os.Create("log.txt")
+    if err != nil { panic(err) }
+    f.WriteString(resulting_string)
+    defer f.Close()
 }
 
