@@ -1,8 +1,8 @@
-katas
+Playground
 =====
 
-This repository hosts my personal Code Katas, that is
-my personal solutions programming exercises and challenges
+This repository hosts my personal coding Katas, that is
+experiments on various language features and my personal solutions programming exercises and challenges
 found on various sites such as [codegolf.se](http://codegolf.stackexchange.com/)
 and [r/dailyprogrammer](http://www.reddit.com/r/dailyprogrammer). Those Katas
 are done for self {improvement/amusement/education/*}
