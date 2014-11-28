@@ -1,15 +1,17 @@
-katas
+Playground
 =====
 
 This repository hosts my personal Code Katas, that is
 my personal solutions programming exercises and challenges
 found on various sites such as [codegolf.se](http://codegolf.stackexchange.com/)
-and [r/dailyprogrammer](http://www.reddit.com/r/dailyprogrammer). Those Katas
+and [r/dailyprogrammer](http://www.reddit.com/r/dailyprogrammer), and experiments
+of various kinds that I do run. Those Katas and experiments
 are done for self {improvement/amusement/education/*}
 
 I will be solving those different Katas (for now) on several languages that interest me,
 that is `C`, `C++`, `Go`, `Python` and perhaps `Java`. If I get interested in other
-languages in the future I may as well solve these Katas on that language.
+languages in the future I may as well solve these Katas on that language. Experiments will
+be run on any language that interests me.
 
 Setup
 --------
