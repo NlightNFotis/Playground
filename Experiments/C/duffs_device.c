@@ -17,7 +17,7 @@ main (void)
 	
     puts ("Please enter your name.");
 
-    my_name = malloc (buff_siz + 1);
+    my_name    = malloc (buff_siz + 1);
     bytes_read = getline (&my_name, &buff_siz, stdin);
 
     if (bytes_read == -1)
@@ -26,7 +26,7 @@ main (void)
         return -1;
       }
 
-    name_cp = malloc (buff_siz + 1);
+    name_cp      = malloc (buff_siz + 1);
     bytes_copied = duffs_device (my_name, name_cp, bytes_read);
     
     if (bytes_read == bytes_copied)
