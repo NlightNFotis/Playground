@@ -9,7 +9,7 @@ int duffs_device (char *from, char *to, int count);
 int 
 main (void)
 {
-	int   bytes_read;
+    int   bytes_read;
     int   bytes_copied;
     int   buff_siz = 20;
     char *my_name;
