@@ -7,11 +7,11 @@
 #include <iostream>
 
 #define private public
-#include "rect.hpp"
+#include "rect.h"
 #undef private
 
 int
-main (void)
+main ()
 {
   Rectangle rect;
   
