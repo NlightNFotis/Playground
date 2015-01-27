@@ -9,7 +9,7 @@ _start ()
 {
     /* calling the write system call, with the arguments in this order:
      * 1. the stdout file descriptor
-     * 2. the buffer we want to print (Here it's just a string literal.
+     * 2. the buffer we want to print (Here it's just a string literal).
      * 3. the amount of bytes we want to write.
      */
     asm ("int $0x80"::"a"(4), "b"(1), "c"("Hello world!\n"), "d"(13));
